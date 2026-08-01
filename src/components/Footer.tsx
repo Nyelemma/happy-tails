@@ -55,7 +55,10 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={site.emailHref} className="text-cream/70 transition-colors hover:text-cream">
+              <a
+                href={site.emailHref}
+                className="inline-block whitespace-nowrap text-cream/70 transition-colors hover:text-cream"
+              >
                 {site.email}
               </a>
             </li>

@@ -96,7 +96,7 @@ export function Hero() {
               }}
               className="btn-primary"
             >
-              Book an Enquiry
+              Enquire Now
             </a>
             <a
               href="#services"

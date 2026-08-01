@@ -102,7 +102,7 @@ export function Navbar() {
             }}
             className="btn-primary !px-5 !py-2.5 !text-sm"
           >
-            Book an Enquiry
+            Enquire Now
           </a>
         </div>
 
@@ -156,7 +156,7 @@ export function Navbar() {
                   }}
                   className="btn-primary w-full text-center"
                 >
-                  Book an Enquiry
+                  Enquire Now
                 </a>
               </li>
             </ul>

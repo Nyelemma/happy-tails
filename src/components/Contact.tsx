@@ -45,7 +45,7 @@ export function Contact() {
                   <Mail size={22} aria-hidden />
                 </div>
                 <h3 className="font-display text-xl text-charcoal">Email Us</h3>
-                <p className="mt-2 break-all text-base font-semibold text-sage-dark group-hover:underline">
+                <p className="mt-2 whitespace-nowrap text-sm font-semibold text-sage-dark group-hover:underline sm:text-base">
                   {site.email}
                 </p>
                 <p className="mt-2 text-sm text-charcoal/60">
