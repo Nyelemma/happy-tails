@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces Variable', Fraunces, Georgia, 'Times New Roman', serif;
+  --font-sans: 'Outfit Variable', Outfit, ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fbf9f6;
+  --color-sand: #ebe4d8;
+  --color-sage: #7a9b7e;
+  --color-sage-dark: #5c7a60;
+  --color-charcoal: #2a2a28;
+
+  --shadow-soft: 0 10px 30px -18px rgb(42 42 40 / 0.28);
+  --shadow-lift: 0 18px 40px -22px rgb(42 42 40 / 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-cream font-sans text-charcoal antialiased;
+    margin: 0;
+    min-width: 320px;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-sage) 35%, white);
+    color: var(--color-charcoal);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-sage px-7 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:bg-sage-dark hover:shadow-lift focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage;
+  }
+
+  .btn-secondary-light {
+    @apply inline-flex items-center justify-center rounded-xl border border-cream/45 bg-cream/10 px-7 py-3.5 text-sm font-semibold text-cream backdrop-blur-sm transition-all duration-300 hover:bg-cream/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream;
+  }
+}

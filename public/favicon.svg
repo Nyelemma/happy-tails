@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Happy Tails">
+  <rect width="64" height="64" rx="16" fill="#FBF9F6"/>
+  <g fill="#5C7A60">
+    <ellipse cx="32" cy="40" rx="14" ry="15"/>
+    <circle cx="18" cy="24" r="5.5"/>
+    <circle cx="29" cy="18" r="5.8"/>
+    <circle cx="42" cy="20" r="5.5"/>
+    <circle cx="48" cy="32" r="5.2"/>
+  </g>
+</svg>
