@@ -123,6 +123,26 @@ export const galleryImages = [
     alt: 'Dog and cat together — family pet care Southport',
     span: 'tall',
   },
+  {
+    src: '/assets/gallery/10.webp',
+    alt: 'Friendly rabbit outdoors — small animal care Southport',
+    span: 'tall',
+  },
+  {
+    src: '/assets/gallery/11.webp',
+    alt: 'Fluffy rabbit among spring flowers — rabbit sitting Southport',
+    span: 'wide',
+  },
+  {
+    src: '/assets/gallery/12.webp',
+    alt: 'Tri-colour guinea pig — guinea pig care Southport',
+    span: 'normal',
+  },
+  {
+    src: '/assets/gallery/13.webp',
+    alt: 'Guinea pig gently held during caring home visit',
+    span: 'tall',
+  },
 ] as const
 
 /** Easy to update — replace with real customer reviews when ready */
